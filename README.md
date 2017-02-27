@@ -30,3 +30,4 @@ Compile
  
 ```
 npm run compile
+```
