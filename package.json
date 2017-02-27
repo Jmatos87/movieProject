@@ -3,7 +3,7 @@
   "name": "MovieSearch",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.html",
   "scripts": {
     "compile": "webpack",
     "start": "node server.js",

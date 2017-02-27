@@ -73,7 +73,7 @@ class App extends React.Component {
             </div>
 
             <div id="moviePoster">
-              <img src={" http://image.tmdb.org/t/p/w780/"+movie.poster_path} />
+              <img src={"http://image.tmdb.org/t/p/w780/"+movie.poster_path} />
               <img id="backdrop" src={" http://image.tmdb.org/t/p/w1280/"+movie.backdrop_path} />
             </div>
 
