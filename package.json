@@ -3,10 +3,12 @@
   "name": "MovieSearch",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://jmatos87.github.io/movieProject"
   "main": "app.js",
   "scripts": {
     "compile": "webpack",
     "start": "node server.js",
+    "deploy":"npm run build&&gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
