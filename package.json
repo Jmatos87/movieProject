@@ -3,7 +3,7 @@
   "name": "MovieSearch",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://jmatos87.github.io/movieProject"
+  "homepage": "https://jmatos87.github.io/movieProject",
   "main": "app.js",
   "scripts": {
     "compile": "webpack",
