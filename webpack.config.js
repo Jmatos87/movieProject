@@ -6,7 +6,7 @@ module.exports = {
     './main.js',
   ],
   output: {
-    path: path.join(__dirname, 'www'),
+    path: './',
     filename: 'bundle.js',
   },
   module: {

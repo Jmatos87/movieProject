@@ -3,12 +3,10 @@
   "name": "MovieSearch",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://jmatos87.github.io/movieProject",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
     "compile": "webpack",
     "start": "node server.js",
-    "deploy":"npm run compile&&gh-pages -d compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,6 +16,7 @@
     "babel-loader": "^6.3.2",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "dotenv-webpack": "^1.4.1",
     "express": "^4.14.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
