@@ -9495,6 +9495,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var temp = '7b51cff456e1c97cfb00a9bd76f9339e';
+
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
 
@@ -9504,7 +9506,7 @@ var App = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
     _this.state = {
-      moviesArray: [],
+      moviesArray: [''],
       showing: false
     };
     _this.textChange = _this.textChange.bind(_this);
@@ -9524,7 +9526,8 @@ var App = function (_React$Component) {
         select: function select(event, ui) {
           var index = ui.item.index;
           self.setStateIndex(index);
-        }
+        },
+        source: []
       });
     }
   }, {
@@ -9545,7 +9548,7 @@ var App = function (_React$Component) {
       var self = this;
       return new Promise(function (resolve, reject) {
         $.ajax({
-          url: "https://api.themoviedb.org/3/search/movie?api_key=" + config.api + "&query=" + string,
+          url: "https://api.themoviedb.org/3/search/movie?api_key=" + temp + "&query=" + string,
           type: "get",
           error: function error(request, status, _error) {
             reject(request);
