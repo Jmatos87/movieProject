@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 
+
+
 class App extends React.Component {
   constructor() {
     super();
@@ -41,6 +43,10 @@ class App extends React.Component {
 
   callTMDB(string){
     const self = this;
+    var config = {
+      api:"7b51cff456e1c97cfb00a9bd76f9339e"
+    }
+
     return new Promise((resolve, reject) => {
             $.ajax({
                 url: "https://api.themoviedb.org/3/search/movie?api_key="+config.api+"&query=" + string,
@@ -73,7 +79,7 @@ class App extends React.Component {
             </div>
 
             <div id="moviePoster">
-              <img src={"http://image.tmdb.org/t/p/w780/"+movie.poster_path} />
+              <img id="dvdPoster"src={"http://image.tmdb.org/t/p/w780/"+movie.poster_path} />
               <img id="backdrop" src={" http://image.tmdb.org/t/p/w1280/"+movie.backdrop_path} />
             </div>
 
